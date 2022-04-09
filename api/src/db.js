@@ -8,7 +8,7 @@ const{
 console.log(process.env.DB_USER)
 
 //Con sequalize me conecto a la DB
-const sequelize = new Sequelize(`postgres://postgres:root@localhost/mychat`, {
+const sequelize = new Sequelize(`postgres://postgres:root@127.0.0.1:5432/mychat`, {
     logging: false,
     native: false,
     dialect: 'postgres',
